@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <title>Deriv-style Dashboard Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="demo-ribbon">INDEPENDENT PRACTICE DEMO · NO REAL TRADING OR PAYMENTS</div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-row">
+        <div class="brand">deriv<span>•</span></div>
+        <button class="icon-btn notification" aria-label="Notifications" title="Notifications">♧<i>9</i></button>
+        <button class="mobile-close" id="closeMenu" aria-label="Close menu">×</button>
+      </div>
+      <div class="thought"><span>✣</span><input id="thoughtInput" placeholder="What's on your mind?" aria-label="What's on your mind?"></div>
+      <nav class="nav-list" aria-label="Main navigation">
+        <button class="nav-item active" data-page="home"><span>⌂</span>Home</button>
+        <button class="nav-item" data-page="cfds"><span>▥</span>CFDs</button>
+        <button class="nav-item" data-page="exchange"><span>▣</span>Exchange</button>
+        <button class="nav-item" data-page="options"><span>♧</span>Options</button>
+        <button class="nav-item" data-page="portfolio"><span>▱</span>Portfolio</button>
+      </nav>
+      <button class="ask-amy" id="amyButton">✦ Ask Amy</button>
+      <div class="sidebar-spacer"></div>
+      <div class="mobile-card" id="mobileCard">
+        <button class="dismiss" id="dismissMobile" aria-label="Dismiss">×</button>
+        <strong>Deriv is on mobile</strong>
+        <span>Scan to download</span>
+        <div class="fake-qr" aria-label="Decorative QR placeholder"><div></div></div>
+        <small>Available on App Store and Play Store</small>
+      </div>
+      <button class="profile-mini" data-page="profile">
+        <span class="avatar">●</span>
+        <span><b>DEMO USER</b><small>demo@example.com</small></span><span class="chevron">›</span>
+      </button>
+    </aside>
+
+    <main class="main-area">
+      <header class="mobile-header">
+        <button class="menu-toggle" id="openMenu" aria-label="Open menu">☰</button>
+        <div class="brand">deriv<span>•</span></div>
+        <button class="icon-btn" aria-label="Notifications">♧</button>
+      </header>
+      <div class="content-wrap">
+        <div class="page-heading">
+          <div><p class="eyebrow">YOUR PRACTICE SPACE</p><h1 id="pageTitle">Welcome back</h1></div>
+          <span class="demo-pill">DEMO MODE</span>
+        </div>
+        <section id="pageContent" aria-live="polite"></section>
+        <footer>Independent educational interface demo. Balances, prices and activity are fictional and for interface practice only.</footer>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="modal-icon">✦</div>
+      <h2 id="modalTitle">Demo interaction</h2>
+      <p id="modalText">This is a visual-only demo. No real account or transaction is connected.</p>
+      <button class="primary-btn" id="modalOk">Got it</button>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
